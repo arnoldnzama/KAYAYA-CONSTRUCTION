@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/language-switcher.css">
     <!-- Ajout des meta tags SEO -->
     <meta name="description" content="KAYAYA ILUNGA CONSTRUCTION - Votre partenaire en construction résidentielle et commerciale en Afrique et en Europe. Bâtissons vos projets, pierre après pierre.">
     <meta name="keywords" content="construction, bâtiment, rénovation, Afrique, Europe, Kayaya Ilunga, construction résidentielle, construction commerciale">
@@ -42,12 +43,12 @@
                     </a>
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="nav-link active">Accueil</a>
-                    <a href="#about" class="nav-link">À propos</a>
-                    <a href="#services" class="nav-link">Services</a>
-                    <a href="#projects" class="nav-link">Réalisations</a>
-                    <a href="#blog" class="nav-link">Blog</a>
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#home" class="nav-link active" data-translate="nav.home">Accueil</a>
+                    <a href="#about" class="nav-link" data-translate="nav.about">À propos</a>
+                    <a href="#services" class="nav-link" data-translate="nav.services">Services</a>
+                    <a href="#projects" class="nav-link" data-translate="nav.projects">Réalisations</a>
+                    <a href="#blog" class="nav-link" data-translate="nav.blog">Blog</a>
+                    <a href="#contact" class="nav-link" data-translate="nav.contact">Contact</a>
                 </div>
                 <div class="md:hidden">
                     <button class="mobile-menu-button">
@@ -57,12 +58,12 @@
             </div>
                         <!-- Mobile menu -->
                         <div class="mobile-menu hidden md:hidden bg-white py-4">
-                            <a href="#home" class="block py-2 px-4 hover:bg-gray-100 nav-link">Accueil</a>
-                            <a href="#about" class="block py-2 px-4 hover:bg-gray-100 nav-link">À propos</a>
-                            <a href="#services" class="block py-2 px-4 hover:bg-gray-100 nav-link">Services</a>
-                            <a href="#projects" class="block py-2 px-4 hover:bg-gray-100 nav-link">Réalisations</a>
-                            <a href="#blog" class="block py-2 px-4 hover:bg-gray-100 nav-link">Blog</a>
-                            <a href="#contact" class="block py-2 px-4 hover:bg-gray-100 nav-link">Contact</a>
+                            <a href="#home" class="block py-2 px-4 hover:bg-gray-100 nav-link" data-translate="nav.home">Accueil</a>
+                            <a href="#about" class="block py-2 px-4 hover:bg-gray-100 nav-link" data-translate="nav.about">À propos</a>
+                            <a href="#services" class="block py-2 px-4 hover:bg-gray-100 nav-link" data-translate="nav.services">Services</a>
+                            <a href="#projects" class="block py-2 px-4 hover:bg-gray-100 nav-link" data-translate="nav.projects">Réalisations</a>
+                            <a href="#blog" class="block py-2 px-4 hover:bg-gray-100 nav-link" data-translate="nav.blog">Blog</a>
+                            <a href="#contact" class="block py-2 px-4 hover:bg-gray-100 nav-link" data-translate="nav.contact">Contact</a>
                         </div>
         </div>
     </nav>
@@ -71,46 +72,49 @@
     <section id="home" class="hero flex items-center justify-center text-center text-white">
         <div class="hero-background"></div>
         <div class="container mx-auto px-6 relative z-10 hero-content">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Bâtissons vos projets, <span class="primary-color">pierre après pierre</span></h1>
-            <p class="text-xl md:text-2xl mb-8">Votre partenaire en construction résidentielle et commerciale en Afrique et en Europe</p>
-            <a href="#contact" class="primary-bg hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 mt-8 inline-block">Poser vos questions</a>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                <span data-translate="hero.title">Bâtissons vos projets,</span>
+                <span class="primary-color" data-translate="hero.subtitle">pierre après pierre</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8" data-translate="hero.description">Votre partenaire en construction résidentielle et commerciale en Afrique et en Europe</p>
+            <a href="#contact" class="primary-bg hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 mt-8 inline-block" data-translate="hero.cta">Poser vos questions</a>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-white fade-in">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title">À propos de nous</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title" data-translate="about.title">À propos de nous</h2>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
                     <img src="images/planche.webp" alt="Équipe de construction" class="rounded-lg shadow-xl hover-zoom w-full">
                 </div>
                 <div class="md:w-1/2">
-                    <h3 class="text-2xl font-bold mb-4 primary-color">Notre histoire</h3>
-                    <p class="text-gray-700 mb-6">Fondée en 2019, KAYAYA ILUNGA CONSTRUCTION est une société pour les travaux de constructions, rénovation, réaménagement et décorations.
+                    <h3 class="text-2xl font-bold mb-4 primary-color" data-translate="about.story.title">Notre histoire</h3>
+                    <p class="text-gray-700 mb-6" data-translate="about.story.content">Fondée en 2019, KAYAYA ILUNGA CONSTRUCTION est une société pour les travaux de constructions, rénovation, réaménagement et décorations.
                         tout corps d'état : génie civil, CVC, électricité, bois, revêtements , plâtre, peinture. Nous vous construisons votre maison de rêve.</p>
                     
-                    <h3 class="text-2xl font-bold mb-4 primary-color">Nos valeurs</h3>
+                    <h3 class="text-2xl font-bold mb-4 primary-color" data-translate="about.values.title">Nos valeurs</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                         <div class="value-card p-6 rounded-lg">
                             <i class="fas fa-award service-icon primary-color text-4xl mb-4"></i>
-                            <h4 class="font-bold mb-2 text-xl">Qualité</h4>
-                            <p class="text-gray-700">Des matériaux premium et un savoir-faire irréprochable pour des résultats durables.</p>
+                            <h4 class="font-bold mb-2 text-xl" data-translate="about.values.quality.title">Qualité</h4>
+                            <p class="text-gray-700" data-translate="about.values.quality.content">Des matériaux premium et un savoir-faire irréprochable pour des résultats durables.</p>
                         </div>
                         <div class="value-card p-6 rounded-lg">
                             <i class="fas fa-clock service-icon primary-color text-4xl mb-4"></i>
-                            <h4 class="font-bold mb-2 text-xl">Respect des délais</h4>
-                            <p class="text-gray-700">Une organisation rigoureuse pour respecter nos engagements calendaires.</p>
+                            <h4 class="font-bold mb-2 text-xl" data-translate="about.values.deadlines.title">Respect des délais</h4>
+                            <p class="text-gray-700" data-translate="about.values.deadlines.content">Une organisation rigoureuse pour respecter nos engagements calendaires.</p>
                         </div>
                         <div class="value-card p-6 rounded-lg">
                             <i class="fas fa-eye service-icon primary-color text-4xl mb-4"></i>
-                            <h4 class="font-bold mb-2 text-xl">Transparence</h4>
-                            <p class="text-gray-700">Des devis détaillés et un suivi régulier pour une relation de confiance.</p>
+                            <h4 class="font-bold mb-2 text-xl" data-translate="about.values.transparency.title">Transparence</h4>
+                            <p class="text-gray-700" data-translate="about.values.transparency.content">Des devis détaillés et un suivi régulier pour une relation de confiance.</p>
                         </div>
                         <div class="value-card p-6 rounded-lg">
                             <i class="fas fa-users service-icon primary-color text-4xl mb-4"></i>
-                            <h4 class="font-bold mb-2 text-xl">Équipe qualifiée</h4>
-                            <p class="text-gray-700">Des professionnels expérimentés et certifiés pour chaque spécialité.</p>
+                            <h4 class="font-bold mb-2 text-xl" data-translate="about.values.team.title">Équipe qualifiée</h4>
+                            <p class="text-gray-700" data-translate="about.values.team.content">Des professionnels expérimentés et certifiés pour chaque spécialité.</p>
                         </div>
                     </div>
                 </div>
@@ -122,57 +126,57 @@
 <section id="services" class="py-24 bg-white fade-in">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-bold mb-4 section-title">Une gamme complète de services</h2>
-        <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Nos solutions couvrent tous les aspects de la construction, de la planification à la réalisation clé en main.</p>
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 section-title" data-translate="services.title">Une gamme complète de services</h2>
+        <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto" data-translate="services.subtitle">Nos solutions couvrent tous les aspects de la construction, de la planification à la réalisation clé en main.</p>
       </div>
   
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         <!-- Service 1 -->
         <div class="service-card p-10 rounded-xl text-center">
           <i class="fas fa-home text-5xl text-yellow-500 mb-6"></i>
-          <h3 class="text-2xl font-bold mb-4">Construction résidentielle</h3>
-          <p class="text-gray-600 mb-6">Maisons sur mesure, lotissements, logements collectifs. Nous bâtissons vos espaces de vie avec passion.</p>
-          <a href="#contact" class="inline-block text-yellow-600 font-semibold">En savoir plus</a>
+          <h3 class="text-2xl font-bold mb-4" data-translate="services.items.residential.title">Construction résidentielle</h3>
+          <p class="text-gray-600 mb-6" data-translate="services.items.residential.description">Maisons sur mesure, lotissements, logements collectifs. Nous bâtissons vos espaces de vie avec passion.</p>
+          <a href="#contact" class="inline-block text-yellow-600 font-semibold" data-translate="services.items.residential.cta">En savoir plus</a>
         </div>
   
         <!-- Service 2 -->
         <div class="service-card p-10 rounded-xl text-center">
           <i class="fas fa-building text-5xl text-yellow-500 mb-6"></i>
-          <h3 class="text-2xl font-bold mb-4">Construction commerciale</h3>
-          <p class="text-gray-600 mb-6">Bureaux, commerces, entrepôts : des espaces professionnels pensés pour durer et évoluer.</p>
-          <a href="#contact" class="inline-block text-yellow-600 font-semibold">En savoir plus</a>
+          <h3 class="text-2xl font-bold mb-4" data-translate="services.items.commercial.title">Construction commerciale</h3>
+          <p class="text-gray-600 mb-6" data-translate="services.items.commercial.description">Bureaux, commerces, entrepôts : des espaces professionnels pensés pour durer et évoluer.</p>
+          <a href="#contact" class="inline-block text-yellow-600 font-semibold" data-translate="services.items.commercial.cta">En savoir plus</a>
         </div>
   
         <!-- Service 3 -->
         <div class="service-card p-10 rounded-xl text-center">
           <i class="fas fa-hammer text-5xl text-yellow-500 mb-6"></i>
-          <h3 class="text-2xl font-bold mb-4">Rénovation</h3>
-          <p class="text-gray-600 mb-6">Réhabilitation complète ou transformation légère, nous redonnons vie à vos bâtiments.</p>
-          <a href="#contact" class="inline-block text-yellow-600 font-semibold">En savoir plus</a>
+          <h3 class="text-2xl font-bold mb-4" data-translate="services.items.renovation.title">Rénovation</h3>
+          <p class="text-gray-600 mb-6" data-translate="services.items.renovation.description">Réhabilitation complète ou transformation légère, nous redonnons vie à vos bâtiments.</p>
+          <a href="#contact" class="inline-block text-yellow-600 font-semibold" data-translate="services.items.renovation.cta">En savoir plus</a>
         </div>
   
         <!-- Service 4 -->
         <div class="service-card p-10 rounded-xl text-center">
           <i class="fas fa-road text-5xl text-yellow-500 mb-6"></i>
-          <h3 class="text-2xl font-bold mb-4">Travaux publics</h3>
-          <p class="text-gray-600 mb-6">Voirie, infrastructures, aménagements extérieurs : des réalisations solides et durables.</p>
-          <a href="#contact" class="inline-block text-yellow-600 font-semibold">En savoir plus</a>
+          <h3 class="text-2xl font-bold mb-4" data-translate="services.items.public.title">Travaux publics</h3>
+          <p class="text-gray-600 mb-6" data-translate="services.items.public.description">Voirie, infrastructures, aménagements extérieurs : des réalisations solides et durables.</p>
+          <a href="#contact" class="inline-block text-yellow-600 font-semibold" data-translate="services.items.public.cta">En savoir plus</a>
         </div>
   
         <!-- Service 5 -->
         <div class="service-card p-10 rounded-xl text-center">
           <i class="fas fa-clipboard-check text-5xl text-yellow-500 mb-6"></i>
-          <h3 class="text-2xl font-bold mb-4">Maîtrise d'œuvre</h3>
-          <p class="text-gray-600 mb-6">Planification, coordination, et contrôle de la qualité, pour un chantier mené de main de maître.</p>
-          <a href="#contact" class="inline-block text-yellow-600 font-semibold">En savoir plus</a>
+          <h3 class="text-2xl font-bold mb-4" data-translate="services.items.management.title">Maîtrise d'œuvre</h3>
+          <p class="text-gray-600 mb-6" data-translate="services.items.management.description">Planification, coordination, et contrôle de la qualité, pour un chantier mené de main de maître.</p>
+          <a href="#contact" class="inline-block text-yellow-600 font-semibold" data-translate="services.items.management.cta">En savoir plus</a>
         </div>
   
         <!-- Service 6 -->
         <div class="service-card p-10 rounded-xl text-center">
           <i class="fas fa-hard-hat text-5xl text-yellow-500 mb-6"></i>
-          <h3 class="text-2xl font-bold mb-4">Gros œuvre</h3>
-          <p class="text-gray-600 mb-6">Des fondations aux structures porteuses, nous assurons la robustesse de vos bâtiments.</p>
-          <a href="#contact" class="inline-block text-yellow-600 font-semibold">En savoir plus</a>
+          <h3 class="text-2xl font-bold mb-4" data-translate="services.items.structure.title">Gros œuvre</h3>
+          <p class="text-gray-600 mb-6" data-translate="services.items.structure.description">Des fondations aux structures porteuses, nous assurons la robustesse de vos bâtiments.</p>
+          <a href="#contact" class="inline-block text-yellow-600 font-semibold" data-translate="services.items.structure.cta">En savoir plus</a>
         </div>
       </div>
     </div>
@@ -182,14 +186,14 @@
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-white fade-in">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title">Nos réalisations</h2>
-            <p class="text-xl text-gray-700 mb-12 max-w-3xl mx-auto text-center">Découvrez une sélection de nos projets récents en France et en Belgique.</p>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title" data-translate="projects.title">Nos réalisations</h2>
+            <p class="text-xl text-gray-700 mb-12 max-w-3xl mx-auto text-center" data-translate="projects.subtitle">Découvrez une sélection de nos projets récents en France et en Belgique.</p>
             
             <div class="flex justify-center mb-8">
-                <button class="filter-btn active px-4 py-2 mx-2 rounded-full primary-bg text-white" data-filter="all">Tous</button>
-                <button class="filter-btn px-4 py-2 mx-2 rounded-full border border-gray-300 hover:bg-gray-100" data-filter="residential">Résidentiel</button>
-                <button class="filter-btn px-4 py-2 mx-2 rounded-full border border-gray-300 hover:bg-gray-100" data-filter="commercial">Commercial</button>
-                <button class="filter-btn px-4 py-2 mx-2 rounded-full border border-gray-300 hover:bg-gray-100" data-filter="renovation">Rénovation</button>
+                <button class="filter-btn active px-4 py-2 mx-2 rounded-full primary-bg text-white" data-filter="all" data-translate="projects.filters.all">Tous</button>
+                <button class="filter-btn px-4 py-2 mx-2 rounded-full border border-gray-300 hover:bg-gray-100" data-filter="residential" data-translate="projects.filters.residential">Résidentiel</button>
+                <button class="filter-btn px-4 py-2 mx-2 rounded-full border border-gray-300 hover:bg-gray-100" data-filter="commercial" data-translate="projects.filters.commercial">Commercial</button>
+                <button class="filter-btn px-4 py-2 mx-2 rounded-full border border-gray-300 hover:bg-gray-100" data-filter="renovation" data-translate="projects.filters.renovation">Rénovation</button>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -203,9 +207,9 @@
                         <div class="slider"></div>
                     </div>
                     <div class="p-4">
-                        <h3 class="text-xl font-bold mb-2">Maison contemporaine</h3>
-                        <p class="text-gray-600 mb-2">Kinshasa, N'sele - 2025</p>
-                        <p class="text-gray-700">Construction d'une maison individuelle de 150m² avec terrasse et jardin paysagé.</p>
+                        <h3 class="text-xl font-bold mb-2" data-translate="projects.items.contemporary.title">Maison contemporaine</h3>
+                        <p class="text-gray-600 mb-2" data-translate="projects.items.contemporary.location">Kinshasa, N'sele - 2025</p>
+                        <p class="text-gray-700" data-translate="projects.items.contemporary.description">Construction d'une maison individuelle de 150m² avec terrasse et jardin paysagé.</p>
                     </div>
                 </div>
                 
@@ -215,9 +219,9 @@
                         <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Bureaux" class="w-full h-64 object-cover">
                     </div>
                     <div class="p-4">
-                        <h3 class="text-xl font-bold mb-2">Siège social</h3>
-                        <p class="text-gray-600 mb-2">RDC, Lubumbashi - 2024</p>
-                        <p class="text-gray-700">Construction d'un bâtiment de bureaux de 3 étages avec parking souterrain.</p>
+                        <h3 class="text-xl font-bold mb-2" data-translate="projects.items.headquarters.title">Siège social</h3>
+                        <p class="text-gray-600 mb-2" data-translate="projects.items.headquarters.location">RDC, Lubumbashi - 2024</p>
+                        <p class="text-gray-700" data-translate="projects.items.headquarters.description">Construction d'un bâtiment de bureaux de 3 étages avec parking souterrain.</p>
                     </div>
                 </div>
                 
@@ -227,9 +231,9 @@
                         <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Appartement rénové" class="w-full h-64 object-cover">
                     </div>
                     <div class="p-4">
-                        <h3 class="text-xl font-bold mb-2">Rénovation d'appartement</h3>
-                        <p class="text-gray-600 mb-2">RDC, Kongo-Centrale - 2025</p>
-                        <p class="text-gray-700">Réhabilitation complète d'un appartement haussmannien de 80m².</p>
+                        <h3 class="text-xl font-bold mb-2" data-translate="projects.items.apartment.title">Rénovation d'appartement</h3>
+                        <p class="text-gray-600 mb-2" data-translate="projects.items.apartment.location">RDC, Kongo-Centrale - 2025</p>
+                        <p class="text-gray-700" data-translate="projects.items.apartment.description">Réhabilitation complète d'un appartement haussmannien de 80m².</p>
                     </div>
                 </div>
                 
@@ -239,9 +243,9 @@
                         <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Résidence" class="w-full h-64 object-cover">
                     </div>
                     <div class="p-4">
-                        <h3 class="text-xl font-bold mb-2">Résidence collective</h3>
-                        <p class="text-gray-600 mb-2">Brazzaville, Oyo - 2024</p>
-                        <p class="text-gray-700">Construction d'une résidence de 12 logements avec espaces communs.</p>
+                        <h3 class="text-xl font-bold mb-2" data-translate="projects.items.collective.title">Résidence collective</h3>
+                        <p class="text-gray-600 mb-2" data-translate="projects.items.collective.location">Brazzaville, Oyo - 2024</p>
+                        <p class="text-gray-700" data-translate="projects.items.collective.description">Construction d'une résidence de 12 logements avec espaces communs.</p>
                     </div>
                 </div>
                 
@@ -251,9 +255,9 @@
                         <img src="images/fac-arc.webp" alt="Commerce" class="w-full h-64 object-cover">
                     </div>
                     <div class="p-4">
-                        <h3 class="text-xl font-bold mb-2">Centre commercial</h3>
-                        <p class="text-gray-600 mb-2">Marseille, France - 2019</p>
-                        <p class="text-gray-700">Aménagement d'un espace commercial de 2000m² avec 15 boutiques.</p>
+                        <h3 class="text-xl font-bold mb-2" data-translate="projects.items.mall.title">Centre commercial</h3>
+                        <p class="text-gray-600 mb-2" data-translate="projects.items.mall.location">Marseille, France - 2019</p>
+                        <p class="text-gray-700" data-translate="projects.items.mall.description">Aménagement d'un espace commercial de 2000m² avec 15 boutiques.</p>
                     </div>
                 </div>
                 
@@ -267,15 +271,15 @@
                         <div class="slider"></div>
                     </div>
                     <div class="p-4">
-                        <h3 class="text-xl font-bold mb-2">Transformation de loft</h3>
-                        <p class="text-gray-600 mb-2">Bordeaux, France - 2023</p>
-                        <p class="text-gray-700">Conversion d'un ancien entrepôt en loft contemporain de 120m².</p>
+                        <h3 class="text-xl font-bold mb-2" data-translate="projects.items.loft.title">Transformation de loft</h3>
+                        <p class="text-gray-600 mb-2" data-translate="projects.items.loft.location">Bordeaux, France - 2023</p>
+                        <p class="text-gray-700" data-translate="projects.items.loft.description">Conversion d'un ancien entrepôt en loft contemporain de 120m².</p>
                     </div>
                 </div>
             </div>
             
             <div class="text-center mt-12">
-                <a href="#contact" class="primary-bg hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 inline-block">Voir plus de réalisations</a>
+                <a href="#contact" class="primary-bg hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 inline-block" data-translate="projects.cta">Voir plus de réalisations</a>
             </div>
         </div>
     </section>
@@ -283,7 +287,7 @@
     <!-- Testimonials Section -->
     <section class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title">Témoignages clients</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title" data-translate="testimonials.title">Témoignages clients</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="testimonial-card bg-white p-8 rounded-lg hover-zoom">
@@ -296,12 +300,12 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-6">"KAYAYA ILUNGA CONSTRUCTION a réalisé notre maison de rêve dans les délais et le budget prévus. Le suivi du chantier était impeccable et l'équipe très professionnelle."</p>
+                    <p class="text-gray-700 mb-6" data-translate="testimonials.items.martin.content">"KAYAYA ILUNGA CONSTRUCTION a réalisé notre maison de rêve dans les délais et le budget prévus. Le suivi du chantier était impeccable et l'équipe très professionnelle."</p>
                     <div class="flex items-center">
                         <img src="images/parts/mb.webp" alt="Client" class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 class="font-bold">Martin Bakole</h4>
-                            <p class="text-gray-600 text-sm">Propriétaire, Kinshasa</p>
+                            <h4 class="font-bold" data-translate="testimonials.items.martin.name">Martin Bakole</h4>
+                            <p class="text-gray-600 text-sm" data-translate="testimonials.items.martin.location">Propriétaire, Kinshasa</p>
                         </div>
                     </div>
                 </div>
@@ -316,12 +320,12 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-6">"Nous avons confié la rénovation complète de notre appartement à cette entreprise. Le résultat est magnifique et les artisans ont fait preuve d'un grand savoir-faire."</p>
+                    <p class="text-gray-700 mb-6" data-translate="testimonials.items.thomas.content">"Nous avons confié la rénovation complète de notre appartement à cette entreprise. Le résultat est magnifique et les artisans ont fait preuve d'un grand savoir-faire."</p>
                     <div class="flex items-center">
                         <img src="images/parts/logo_p.webp" alt="Client" class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 class="font-bold">Thomas Dubois</h4>
-                            <p class="text-gray-600 text-sm">Propriétaire, Lubumbashi</p>
+                            <h4 class="font-bold" data-translate="testimonials.items.thomas.name">Thomas Dubois</h4>
+                            <p class="text-gray-600 text-sm" data-translate="testimonials.items.thomas.location">Propriétaire, Lubumbashi</p>
                         </div>
                     </div>
                 </div>
@@ -336,12 +340,12 @@
                             <i class="fas fa-star-half-alt"></i>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-6">"Pour l'ouverture de notre nouvelle boutique, nous avons fait appel à leurs services. Très réactifs et à l'écoute de nos besoins spécifiques. Je recommande vivement."</p>
+                    <p class="text-gray-700 mb-6" data-translate="testimonials.items.elodie.content">"Pour l'ouverture de notre nouvelle boutique, nous avons fait appel à leurs services. Très réactifs et à l'écoute de nos besoins spécifiques. Je recommande vivement."</p>
                     <div class="flex items-center">
                         <img src="images/img3.webp" alt="Client" class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 class="font-bold">Élodie Lambert</h4>
-                            <p class="text-gray-600 text-sm">Gérante, Kongo-Centrale</p>
+                            <h4 class="font-bold" data-translate="testimonials.items.elodie.name">Élodie Lambert</h4>
+                            <p class="text-gray-600 text-sm" data-translate="testimonials.items.elodie.location">Gérante, Kongo-Centrale</p>
                         </div>
                     </div>
                 </div>
@@ -352,26 +356,24 @@
     <!-- Blog Section -->
     <section id="blog" class="py-20 bg-white">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title">Innovations & Architecture</h2>
-            <p class="text-xl text-gray-700 mb-12 max-w-3xl mx-auto text-center">Découvrez les dernières tendances et innovations dans le domaine de la construction et de l'architecture.</p>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title" data-translate="blog.title">Innovations & Architecture</h2>
+            <p class="text-xl text-gray-700 mb-12 max-w-3xl mx-auto text-center" data-translate="blog.subtitle">Découvrez les dernières tendances et innovations dans le domaine de la construction et de l'architecture.</p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Article 1 -->
                 <article class="blog-card bg-white rounded-lg shadow-lg overflow-hidden hover-zoom">
                     <div class="relative">
-                        <img src="images/planche.webp" 
-                             alt="Construction durable" 
-                             class="w-full h-48 object-cover">
-                        <div class="absolute top-4 left-4 bg-[#b78836] text-white px-3 py-1 rounded-full text-sm">
+                        <img src="images/planche.webp" alt="Construction durable" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-[#b78836] text-white px-3 py-1 rounded-full text-sm" data-translate="blog.categories.innovation">
                             Innovation
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-3">La construction durable : l'avenir du bâtiment</h3>
-                        <p class="text-gray-600 mb-4">Découvrez comment les nouvelles technologies et matériaux écologiques révolutionnent le secteur de la construction...</p>
+                        <h3 class="text-xl font-bold mb-3" data-translate="blog.articles.innovation.title">La construction durable : l'avenir du bâtiment</h3>
+                        <p class="text-gray-600 mb-4" data-translate="blog.articles.innovation.excerpt">Découvrez comment les nouvelles technologies et matériaux écologiques révolutionnent le secteur de la construction...</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">15 Mars 2025</span>
-                            <a href="#" class="text-[#b78836] hover:text-[#8B4513] font-semibold transition-colors">Lire plus →</a>
+                            <span class="text-sm text-gray-500" data-translate="blog.articles.innovation.date">15 Mars 2025</span>
+                            <a href="#" class="text-[#b78836] hover:text-[#8B4513] font-semibold transition-colors" data-translate="blog.readMore">Lire plus →</a>
                         </div>
                     </div>
                 </article>
@@ -379,19 +381,17 @@
                 <!-- Article 2 -->
                 <article class="blog-card bg-white rounded-lg shadow-lg overflow-hidden hover-zoom">
                     <div class="relative">
-                        <img src="images/logos/banner.webp" 
-                             alt="Smart Building" 
-                             class="w-full h-48 object-cover">
-                        <div class="absolute top-4 left-4 bg-[#b78836] text-white px-3 py-1 rounded-full text-sm">
+                        <img src="images/logos/banner.webp" alt="Smart Building" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-[#b78836] text-white px-3 py-1 rounded-full text-sm" data-translate="blog.categories.technology">
                             Technologie
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-3">Les Smart Buildings : l'intelligence au service du confort</h3>
-                        <p class="text-gray-600 mb-4">Comment l'IoT et l'automatisation transforment nos bâtiments en espaces intelligents et connectés...</p>
+                        <h3 class="text-xl font-bold mb-3" data-translate="blog.articles.technology.title">Les Smart Buildings : l'intelligence au service du confort</h3>
+                        <p class="text-gray-600 mb-4" data-translate="blog.articles.technology.excerpt">Comment l'IoT et l'automatisation transforment nos bâtiments en espaces intelligents et connectés...</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">10 Mars 2025</span>
-                            <a href="#" class="text-[#b78836] hover:text-[#8B4513] font-semibold transition-colors">Lire plus →</a>
+                            <span class="text-sm text-gray-500" data-translate="blog.articles.technology.date">10 Mars 2025</span>
+                            <a href="#" class="text-[#b78836] hover:text-[#8B4513] font-semibold transition-colors" data-translate="blog.readMore">Lire plus →</a>
                         </div>
                     </div>
                 </article>
@@ -399,26 +399,24 @@
                 <!-- Article 3 -->
                 <article class="blog-card bg-white rounded-lg shadow-lg overflow-hidden hover-zoom">
                     <div class="relative">
-                        <img src="images/fac-arc.webp" 
-                             alt="Architecture moderne" 
-                             class="w-full h-48 object-cover">
-                        <div class="absolute top-4 left-4 bg-[#b78836] text-white px-3 py-1 rounded-full text-sm">
+                        <img src="images/fac-arc.webp" alt="Architecture moderne" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-[#b78836] text-white px-3 py-1 rounded-full text-sm" data-translate="blog.categories.design">
                             Design
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-3">L'architecture moderne : entre esthétique et fonctionnalité</h3>
-                        <p class="text-gray-600 mb-4">Les nouvelles tendances architecturales qui redéfinissent nos espaces de vie et de travail...</p>
+                        <h3 class="text-xl font-bold mb-3" data-translate="blog.articles.design.title">L'architecture moderne : entre esthétique et fonctionnalité</h3>
+                        <p class="text-gray-600 mb-4" data-translate="blog.articles.design.excerpt">Les nouvelles tendances architecturales qui redéfinissent nos espaces de vie et de travail...</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">5 Mars 2025</span>
-                            <a href="#" class="text-[#b78836] hover:text-[#8B4513] font-semibold transition-colors">Lire plus →</a>
+                            <span class="text-sm text-gray-500" data-translate="blog.articles.design.date">5 Mars 2025</span>
+                            <a href="#" class="text-[#b78836] hover:text-[#8B4513] font-semibold transition-colors" data-translate="blog.readMore">Lire plus →</a>
                         </div>
                     </div>
                 </article>
             </div>
 
             <div class="text-center mt-12">
-                <a href="#" class="primary-bg hover:bg-secondary text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 inline-block">Voir tous les articles</a>
+                <a href="#" class="primary-bg hover:bg-secondary text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 inline-block" data-translate="blog.cta">Voir tous les articles</a>
             </div>
         </div>
     </section>
@@ -426,7 +424,7 @@
     <!-- Partners Section -->
     <section class="partners-section py-16">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center section-title">Ils nous font confiance</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center section-title" data-translate="partners.title">Ils nous font confiance</h2>
             <div class="partners-track">
                 <div class="partners-container">
                     <!-- Premier groupe de logos -->
@@ -460,8 +458,8 @@
             <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
                 <!-- App Content -->
                 <div class="lg:w-1/2 text-center lg:text-left">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 section-title">Téléchargez notre application mobile</h2>
-                    <p class="text-xl text-gray-700 mb-8">Restez connecté avec KAYAYA ILUNGA CONSTRUCTION où que vous soyez. Suivez vos projets en temps réel, consultez les devis et échangez avec notre équipe.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 section-title" data-translate="app.title">Téléchargez notre application mobile</h2>
+                    <p class="text-xl text-gray-700 mb-8" data-translate="app.description">Restez connecté avec KAYAYA ILUNGA CONSTRUCTION où que vous soyez. Suivez vos projets en temps réel, consultez les devis et échangez avec notre équipe.</p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                         <!-- App Store Button -->
@@ -469,7 +467,7 @@
                             <div class="flex items-center space-x-3">
                                 <i class="fab fa-apple text-3xl"></i>
                                 <div class="text-left">
-                                    <div class="text-xs">Télécharger sur</div>
+                                    <div class="text-xs" data-translate="app.download">Télécharger sur</div>
                                     <div class="text-xl font-semibold">App Store</div>
                                 </div>
                             </div>
@@ -480,7 +478,7 @@
                             <div class="flex items-center space-x-3">
                                 <i class="fab fa-google-play text-3xl"></i>
                                 <div class="text-left">
-                                    <div class="text-xs">Disponible sur</div>
+                                    <div class="text-xs" data-translate="app.available">Disponible sur</div>
                                     <div class="text-xl font-semibold">Google Play</div>
                                 </div>
                             </div>
@@ -492,29 +490,29 @@
                         <div class="flex items-start space-x-3">
                             <i class="fas fa-check-circle text-[#b78836] mt-1"></i>
                             <div>
-                                <h4 class="font-semibold mb-1">Suivi de projet en temps réel</h4>
-                                <p class="text-gray-600 text-sm">Visualisez l'avancement de vos chantiers</p>
+                                <h4 class="font-semibold mb-1" data-translate="app.features.tracking.title">Suivi de projet en temps réel</h4>
+                                <p class="text-gray-600 text-sm" data-translate="app.features.tracking.description">Visualisez l'avancement de vos chantiers</p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-3">
                             <i class="fas fa-check-circle text-[#b78836] mt-1"></i>
                             <div>
-                                <h4 class="font-semibold mb-1">Devis instantanés</h4>
-                                <p class="text-gray-600 text-sm">Recevez des estimations rapides</p>
+                                <h4 class="font-semibold mb-1" data-translate="app.features.quotes.title">Devis instantanés</h4>
+                                <p class="text-gray-600 text-sm" data-translate="app.features.quotes.description">Recevez des estimations rapides</p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-3">
                             <i class="fas fa-check-circle text-[#b78836] mt-1"></i>
                             <div>
-                                <h4 class="font-semibold mb-1">Chat intégré</h4>
-                                <p class="text-gray-600 text-sm">Échangez avec notre équipe</p>
+                                <h4 class="font-semibold mb-1" data-translate="app.features.chat.title">Chat intégré</h4>
+                                <p class="text-gray-600 text-sm" data-translate="app.features.chat.description">Échangez avec notre équipe</p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-3">
                             <i class="fas fa-check-circle text-[#b78836] mt-1"></i>
                             <div>
-                                <h4 class="font-semibold mb-1">Notifications</h4>
-                                <p class="text-gray-600 text-sm">Restez informé des mises à jour</p>
+                                <h4 class="font-semibold mb-1" data-translate="app.features.notifications.title">Notifications</h4>
+                                <p class="text-gray-600 text-sm" data-translate="app.features.notifications.description">Restez informé des mises à jour</p>
                             </div>
                         </div>
                     </div>
@@ -522,12 +520,12 @@
 
                 <!-- App Preview Image -->
                 <div class="lg:w-1/2 relative">
-                    <div class="relative z-10">
-                        <img src="images/logos/banner.webp" alt="Application mobile KAYAYA ILUNGA" class="rounded-lg shadow-2xl transform hover:scale-105 transition duration-300">
+                    <div class="relative z-10 max-w-[50%] mx-auto">
+                        <img src="images/phone.png" alt="Application mobile KAYAYA ILUNGA" class="w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300">
                     </div>
                     <!-- Decorative Elements -->
-                    <div class="absolute -top-4 -right-4 w-32 h-32 bg-[#b78836] rounded-full opacity-20"></div>
-                    <div class="absolute -bottom-4 -left-4 w-24 h-24 bg-[#8B4513] rounded-full opacity-20"></div>
+                    <div class="absolute -top-4 -right-4 w-16 h-16 bg-[#b78836] rounded-full opacity-20"></div>
+                    <div class="absolute -bottom-4 -left-4 w-12 h-12 bg-[#8B4513] rounded-full opacity-20"></div>
                 </div>
             </div>
         </div>
@@ -536,81 +534,81 @@
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gray-100 fade-in">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title">Contactez-nous</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title" data-translate="contact.title">Contactez-nous</h2>
             
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="lg:w-1/2">
                     <div class="bg-white p-8 rounded-lg shadow-md">
-                        <h3 class="text-2xl font-bold mb-6 primary-color">Des questions ?</h3>
+                        <h3 class="text-2xl font-bold mb-6 primary-color" data-translate="contact.form.title">Des questions ?</h3>
                         <form id="contactForm" class="space-y-6">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
-                                    <label for="name" class="block text-gray-700 mb-2">Nom complet*</label>
+                                    <label for="name" class="block text-gray-700 mb-2" data-translate="contact.form.name">Nom complet*</label>
                                     <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
                                 </div>
                                 <div>
-                                    <label for="email" class="block text-gray-700 mb-2">Email*</label>
+                                    <label for="email" class="block text-gray-700 mb-2" data-translate="contact.form.email">Email*</label>
                                     <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
                                 </div>
                             </div>
                             <div>
-                                <label for="phone" class="block text-gray-700 mb-2">Téléphone*</label>
+                                <label for="phone" class="block text-gray-700 mb-2" data-translate="contact.form.phone">Téléphone*</label>
                                 <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
                             </div>
                             <div>
-                                <label for="projectType" class="block text-gray-700 mb-2">Type de projet*</label>
+                                <label for="projectType" class="block text-gray-700 mb-2" data-translate="contact.form.projectType">Type de projet*</label>
                                 <select id="projectType" name="projectType" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                                    <option value="">Sélectionnez...</option>
-                                    <option value="residential">Construction résidentielle</option>
-                                    <option value="commercial">Construction commerciale</option>
-                                    <option value="renovation">Rénovation</option>
-                                    <option value="public">Travaux publics</option>
-                                    <option value="other">Autre</option>
+                                    <option value="" data-translate="contact.form.projectTypes.select">Sélectionnez...</option>
+                                    <option value="residential" data-translate="contact.form.projectTypes.residential">Construction résidentielle</option>
+                                    <option value="commercial" data-translate="contact.form.projectTypes.commercial">Construction commerciale</option>
+                                    <option value="renovation" data-translate="contact.form.projectTypes.renovation">Rénovation</option>
+                                    <option value="public" data-translate="contact.form.projectTypes.public">Travaux publics</option>
+                                    <option value="other" data-translate="contact.form.projectTypes.other">Autre</option>
                                 </select>
                             </div>
                             <div>
-                                <label for="message" class="block text-gray-700 mb-2">Message*</label>
+                                <label for="message" class="block text-gray-700 mb-2" data-translate="contact.form.message">Message*</label>
                                 <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
                             </div>
                             <div>
-                                <label for="file" class="block text-gray-700 mb-2">Joindre un fichier (plan, photo...)</label>
+                                <label for="file" class="block text-gray-700 mb-2" data-translate="contact.form.file">Joindre un fichier (plan, photo...)</label>
                                 <input type="file" id="file" name="file" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
                             </div>
-                            <button type="submit" class="primary-bg hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">Envoyer la demande</button>
+                            <button type="submit" class="primary-bg hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105" data-translate="contact.form.submit">Envoyer la demande</button>
                         </form>
                     </div>
                 </div>
                 
                 <div class="lg:w-1/2">
                     <div class="bg-white p-8 rounded-lg shadow-md mb-8">
-                        <h3 class="text-2xl font-bold mb-6 primary-color">Nos coordonnées</h3>
+                        <h3 class="text-2xl font-bold mb-6 primary-color" data-translate="contact.info.title">Nos coordonnées</h3>
                         <div class="space-y-4">
                             <div class="flex items-start">
                                 <i class="fas fa-map-marker-alt mt-1 mr-4 primary-color"></i>
                                 <div>
-                                    <h4 class="font-bold">Adresse</h4>
-                                    <p class="text-gray-700">12, BOULEVARD LUMUMBA<br>Kinshasa, Democratic Republic of the Congo</p>
+                                    <h4 class="font-bold" data-translate="contact.info.address.title">Adresse</h4>
+                                    <p class="text-gray-700" data-translate="contact.info.address.content">12, BOULEVARD LUMUMBA<br>Kinshasa, Democratic Republic of the Congo</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
                                 <i class="fas fa-phone-alt mt-1 mr-4 primary-color"></i>
                                 <div>
-                                    <h4 class="font-bold">Téléphone</h4>
-                                    <p class="text-gray-700">+243 858 673 529</p>
+                                    <h4 class="font-bold" data-translate="contact.info.phone.title">Téléphone</h4>
+                                    <p class="text-gray-700" data-translate="contact.info.phone.content">+243 858 673 529</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
                                 <i class="fas fa-envelope mt-1 mr-4 primary-color"></i>
                                 <div>
-                                    <h4 class="font-bold">Email</h4>
-                                    <p class="text-gray-700">contact@kayayailunga.com</p>
+                                    <h4 class="font-bold" data-translate="contact.info.email.title">Email</h4>
+                                    <p class="text-gray-700" data-translate="contact.info.email.content">contact@kayayailunga.com</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
                                 <i class="fas fa-clock mt-1 mr-4 primary-color"></i>
                                 <div>
-                                    <h4 class="font-bold">Horaires</h4>
-                                    <p class="text-gray-700">Lundi - Vendredi : 8h - 18h<br>Samedi : 9h - 12h</p>
+                                    <h4 class="font-bold" data-translate="contact.info.hours.title">Horaires</h4>
+                                    <p class="text-gray-700" data-translate="contact.info.hours.content">Lundi - Vendredi : 8h - 18h<br>Samedi : 9h - 12h</p>
                                 </div>
                             </div>
                         </div>
@@ -650,33 +648,33 @@
                     <div class="mb-4">
                         <img src="images/logos/logo.webp" alt="Logo KAYAYA ILUNGA CONSTRUCTION" class="h-24 w-auto object-contain">
                     </div>
-                    <p class="text-gray-400">Bâtissons vos projets, pierre après pierre depuis 2019 en Afrique et en Europe.</p>
+                    <p class="text-gray-400" data-translate="footer.description">Bâtissons vos projets, pierre après pierre depuis 2019 en Afrique et en Europe.</p>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-4">Navigation</h4>
+                    <h4 class="font-bold mb-4" data-translate="footer.navigation.title">Navigation</h4>
                     <ul class="space-y-2">
-                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Accueil</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition">À propos</a></li>
-                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
-                        <li><a href="#projects" class="text-gray-400 hover:text-white transition">Réalisations</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition" data-translate="nav.home">Accueil</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition" data-translate="nav.about">À propos</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition" data-translate="nav.services">Services</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-white transition" data-translate="nav.projects">Réalisations</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition" data-translate="nav.contact">Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-4">Services</h4>
+                    <h4 class="font-bold mb-4" data-translate="footer.services.title">Services</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Construction résidentielle</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Construction commerciale</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Rénovation</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Travaux publics</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Maîtrise d'œuvre</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition" data-translate="services.items.residential.title">Construction résidentielle</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition" data-translate="services.items.commercial.title">Construction commerciale</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition" data-translate="services.items.renovation.title">Rénovation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition" data-translate="services.items.public.title">Travaux publics</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition" data-translate="services.items.management.title">Maîtrise d'œuvre</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-4">Newsletter</h4>
-                    <p class="text-gray-400 mb-4">Abonnez-vous pour recevoir nos actualités et conseils.</p>
+                    <h4 class="font-bold mb-4" data-translate="footer.newsletter.title">Newsletter</h4>
+                    <p class="text-gray-400 mb-4" data-translate="footer.newsletter.description">Abonnez-vous pour recevoir nos actualités et conseils.</p>
                     <form class="flex">
-                        <input type="email" placeholder="Votre email" class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-900">
+                        <input type="email" data-translate-placeholder="footer.newsletter.placeholder" placeholder="Votre email" class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-900">
                         <button type="submit" class="primary-bg hover:bg-opacity-90 px-4 py-2 rounded-r-md">
                             <i class="fas fa-paper-plane"></i>
                         </button>
@@ -684,11 +682,11 @@
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 KAYAYA ILUNGA CONSTRUCTION. Tous droits réservés.</p>
+                <p class="text-gray-400 text-sm mb-4 md:mb-0" data-translate="footer.legal.copyright">© 2025 KAYAYA ILUNGA CONSTRUCTION. Tous droits réservés.</p>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-white transition">Mentions légales</a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">Politique de confidentialité</a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">CGV</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition" data-translate="footer.legal.links.legal">Mentions légales</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition" data-translate="footer.legal.links.privacy">Politique de confidentialité</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition" data-translate="footer.legal.links.terms">CGV</a>
                 </div>
             </div>
         </div>
@@ -699,7 +697,9 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Suppression de tous les scripts inline -->
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/language-switcher.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
